@@ -1,5 +1,4 @@
 /* Sharepanel */
-
 $(document).ready(function(){
 	$(".open").click(function(){
 		$(".sharepanel").slideToggle('1000',"swing");	
@@ -24,8 +23,8 @@ $("<option />", {
    "value"   : "",
    "text"    : "Menu"
 }).appendTo(".navis select");
-
 // Populate dropdown with menu items
+
 $(".navi a").each(function() {
  var el = $(this);
  $("<option />", {

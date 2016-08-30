@@ -1,5 +1,6 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="bootstrap.js" />
+/// <reference path="bootstrap.min.min.js" />
 /// <reference path="custom.js" />
 /// <reference path="ddlevelsmenu.js" />
 /// <reference path="easing.js" />
