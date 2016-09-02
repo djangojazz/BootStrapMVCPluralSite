@@ -212,6 +212,9 @@
     <Compile Include="Services\MockMailService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
     <Content Include="Content\Template\font-awesome\fontawesome-webfont.svg" />
     <Content Include="Content\Template\img\arrow-down.png" />
     <Content Include="Content\Template\img\arrow-right.png" />
@@ -315,6 +318,10 @@
     <Content Include="Content\Template\font-awesome\fontawesome-webfont.ttf" />
     <Content Include="Content\Template\font-awesome\fontawesome-webfont.woff" />
     <Content Include="Content\Site.less" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Scripts\jquery-2.0.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\custom.js" />
