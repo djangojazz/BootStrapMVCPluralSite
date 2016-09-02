@@ -314,6 +314,7 @@
     <Content Include="Content\Template\font-awesome\fontawesome-webfont.eot" />
     <Content Include="Content\Template\font-awesome\fontawesome-webfont.ttf" />
     <Content Include="Content\Template\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="Content\Site.less" />
     <None Include="Scripts\jquery-2.0.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\custom.js" />
