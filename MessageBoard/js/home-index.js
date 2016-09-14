@@ -1,6 +1,16 @@
 ﻿//home-index.js
+var module = angular.module("homeIndex", []);
 
-function homeIndexController($scope, $http) {
+module.config(function ($routeProvider) {
+  $routeProvider.when("/", {
+    controller: "topicsController",
+    templateUrl: "/templates/topicsView.html"
+  });
+
+  $routeProvider.otherwise({ redirectTo: "/" });
+});
+
+function topicsController($scope, $http) {
   $scope.data = [];
   $scope.isBusy = true;
 
