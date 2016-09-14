@@ -7,6 +7,11 @@ module.config(function ($routeProvider) {
     templateUrl: "/templates/topicsView.html"
   });
 
+  $routeProvider.when("/newmessage", {
+    controller: "newTopicController",
+    templateUrl: "/templates/newTopicView.html"
+  });
+
   $routeProvider.otherwise({ redirectTo: "/" });
 });
 
@@ -27,3 +32,12 @@ function topicsController($scope, $http) {
     $scope.isBusy = false;
   });
 }
+
+function newTopicController($scope, $http, $window) {
+  $scope.newTopic = {};
+
+  $scope.save = function () {
+    alert($scope.newTopic.title);
+  };
+}
+
